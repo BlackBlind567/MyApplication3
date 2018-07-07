@@ -18,6 +18,8 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.squareup.picasso.MemoryPolicy;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 
@@ -35,10 +37,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //banner
+
+        ImageView imageView = findViewById(R.id.banner);
+
+        //grid view
 
         gridView = (GridView)findViewById(R.id.grid);
         gridView.setAdapter(new ImageAdapter(this));
+
+        //banner image call
+
+        Picasso.with(getApplicationContext())
+                .load("https://blackcblind.000webhostapp.com/banner.JPG")
+                .fit()
+                .into(imageView);
+        Picasso.with(getApplicationContext())
+                .invalidate("https://blackcblind.000webhostapp.com/banner.JPG");
+        Picasso.with(getApplicationContext()).
+                load("https://blackcblind.000webhostapp.com/banner.JPG")
+                .networkPolicy(NetworkPolicy.NO_CACHE)
+                .memoryPolicy(MemoryPolicy.NO_CACHE);
+
     }
+
+    //grid view image Adapter
 
     private static class ImageAdapter extends BaseAdapter {
 
