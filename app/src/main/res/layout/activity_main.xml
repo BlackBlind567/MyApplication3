@@ -31,7 +31,8 @@
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <include layout="@layout/cities" />
         </android.support.v7.widget.CardView>
@@ -39,7 +40,8 @@
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <include layout="@layout/donot_miss_deals"/>
         </android.support.v7.widget.CardView>

@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -10,4 +10,18 @@
 
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--<style name="AppBaseTheme" parent="Theme.AppCompat.Light">-->
+        <!--&lt;!&ndash;-->
+        <!--Theme customizations available in newer API levels can go in-->
+        <!--res/values-vXX/styles.xml, while customizations related to-->
+        <!--backward-compatibility can go here.-->
+        <!--&ndash;&gt;-->
+
+    <!--</style>-->
+
+    <!--&lt;!&ndash; Application theme. &ndash;&gt;-->
+
+        <!--&lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;-->
+    <style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar.Horizontal"/>
 </resources>
